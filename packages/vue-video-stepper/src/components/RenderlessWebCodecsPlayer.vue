@@ -7,11 +7,14 @@ const {
   progressText,
   errorMsg,
   currentFrameIndex,
-  maxFrames,
+  totalFrames,
+  codec,
   isReady,
   loadVideo,
   stepForward,
   stepBackward,
+  goToFrame,
+  destroy,
 } = useWebCodecsPlayer();
 </script>
 
@@ -24,10 +27,13 @@ const {
     :progressText="progressText"
     :errorMsg="errorMsg"
     :currentFrameIndex="currentFrameIndex"
-    :maxFrames="maxFrames"
+    :totalFrames="totalFrames"
+    :codec="codec"
     :isReady="isReady"
     :loadVideo="loadVideo"
     :stepForward="stepForward"
     :stepBackward="stepBackward"
+    :goToFrame="goToFrame"
+    :destroy="destroy"
   ></slot>
 </template>

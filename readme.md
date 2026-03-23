@@ -1,1 +1,0 @@
-Workflow: Run npm run build:lib first, then npm run dev for the playground. If you're actively developing the library, you can use npm -w @jrichtsfeld/vue-video-stepper run dev in a separate terminal to rebuild on changes.

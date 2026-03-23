@@ -1,4 +1,14 @@
-import { useWebCodecsPlayer, type PlayerStatus } from './composables/useWebCodecsPlayer';
-import RenderlessWebCodecsPlayer from './components/RenderlessWebCodecsPlayer.vue';
+import RenderlessWebCodecsPlayer from "./components/RenderlessWebCodecsPlayer.vue";
+import {
+  useWebCodecsPlayer,
+  type PlayerStatus,
+} from "./composables/useWebCodecsPlayer";
+import { WebCodecsDecoder, type DecoderResult } from "./utils/decoder";
 
-export { useWebCodecsPlayer, RenderlessWebCodecsPlayer, type PlayerStatus };
+export {
+  RenderlessWebCodecsPlayer,
+  useWebCodecsPlayer,
+  WebCodecsDecoder,
+  type DecoderResult,
+  type PlayerStatus,
+};
